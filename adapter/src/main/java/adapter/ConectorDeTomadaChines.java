@@ -7,7 +7,7 @@ public class ConectorDeTomadaChines implements AdaptadorDeTomada {
 
 	
 	public void conectarETransmitir() {
-		log.info("TRANSMITINDO ENERGIA PELA TOMADA CHINESA");
+		log.info("TRANSMITINDO ENERGIA PELO CONECTOR CHINES");
 	}
 
 	public void desconectar() {

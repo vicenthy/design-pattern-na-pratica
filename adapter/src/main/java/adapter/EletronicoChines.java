@@ -7,23 +7,22 @@ public class EletronicoChines {
 	private static final Logger log = Logger.getLogger(EletronicoChines.class.getName());
 
 	private AdaptadorDeTomada plug;
-
 	private Tomada tomada;
+
 	
 	public EletronicoChines(Tomada tomada) {
 		this.tomada = tomada;
-		setPlug(new ConectorDeTomadaChines());
 	}
 	
 
 	public void ligar() {
-			tomada.conectarETransmitir(getPlug());
+			tomada.conectarETransmitir();
 			log.info("LIGADO!");
 	}
 	
 
 	public void desligar() {
-		tomada.desconectar(getPlug());
+		tomada.desconectar();
 	}
 
 
