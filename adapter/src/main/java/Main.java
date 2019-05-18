@@ -15,15 +15,15 @@ public class Main {
 	public static void main(String[] args) {
 			
 			Tomada tomadaChinesa = new TomadaChinesa(new ConectorDeTomadaChines());
-			EletronicoChines eletronico1 = new EletronicoChines(tomadaChinesa);
-			eletronico1.ligar();
-			eletronico1.desligar();
+			EletronicoChines eletronico = new EletronicoChines(tomadaChinesa);
+			eletronico.ligar();
+			eletronico.desligar();
 	
 
 			Tomada tomadaBrasileira = new TomadaBrasileira(new ConectorDeTomadaBrasileiro());
-			EletronicoChines eletronico2 = new EletronicoChines(tomadaBrasileira);
-			eletronico2.ligar();
-			eletronico2.desligar();
+			eletronico = new EletronicoChines(tomadaBrasileira);
+			eletronico.ligar();
+			eletronico.desligar();
 
 			log.info("FIM");
 			
