@@ -20,7 +20,7 @@ public class TomadaBrasileira  implements Tomada{
 	}
 
 	public void desconectar() {
-		log.info("DESLIGADO!");
+		log.info("DESLIGADO...");
 		plug.desconectar();
 	}
 	

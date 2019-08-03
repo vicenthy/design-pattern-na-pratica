@@ -21,7 +21,7 @@ public class TomadaChinesa implements Tomada{
 	}
 
 	public void desconectar() {
-		log.info("DESLIGADO!");
+		log.info("DESLIGADO...");
 		plug.desconectar();
 	}
 

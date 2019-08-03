@@ -16,6 +16,7 @@ public class Main {
 			
 			Tomada tomadaChinesa = new TomadaChinesa(new ConectorDeTomadaChines());
 			EletronicoChines eletronico = new EletronicoChines(tomadaChinesa);
+	
 			eletronico.ligar();
 			eletronico.desligar();
 	
@@ -24,7 +25,6 @@ public class Main {
 			eletronico = new EletronicoChines(tomadaBrasileira);
 			eletronico.ligar();
 			eletronico.desligar();
-
 			log.info("FIM");
 			
 			
